@@ -12,6 +12,7 @@ header {
     justify-content: flex-end;
     padding-right: 30px;
     gap: 30px;
+    padding: 10px 0;
 
 }
 
@@ -19,6 +20,10 @@ header a {
     text-decoration: none;
     font-weight: 900;
 
+}
+header img {
+    width: 16px;
+    display: none;
 }
 
 @media (max-width: 767px) {
@@ -28,6 +33,17 @@ header a {
         padding-right: 0px;
 
     }
+    header a {
+        display: none;
+    }
+    header img {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .box1 {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .container {
@@ -35,6 +51,53 @@ header a {
     margin: auto;
 }
 
+.box1 {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.box1 .intro h1,p{
+    padding-bottom: 20px;
+}
+
+.intro input {
+    align-items: center;
+    width: 200px;
+    padding: 10px 0;
+    background-color: orange;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.box2 .recent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.posts {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.posts * {
+    background-color: antiquewhite;
+    padding: 10px 8px;
+}
+
+.work1 {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
 footer img {
     width: 40px;
 }
